@@ -2,8 +2,7 @@
 
 namespace EasyOpenXml.Excel.DemoConsole.Demos;
 
-internal static class Demo05_SetValue
-    //
+internal static class Demo06_Paste
 {
     public static void Run()
     {
@@ -16,7 +15,7 @@ internal static class Demo05_SetValue
             return;
         }
 
-        var path = Paths.OutFile("demo05_SetValue.xlsx"); // ※ ファイル名を変更
+        var path = Paths.OutFile("demo06_Paste.xlsx"); // ※ ファイル名を変更
         File.Copy(template, path, overwrite: true);
 
         var excel = new ExcelDocument();
